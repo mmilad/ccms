@@ -1,0 +1,111 @@
+{
+    "modules" : [
+        "navi",
+        "head",
+        "body",
+        "footer"
+    ],
+    "sites" : [
+        "home",
+        "about"
+    ],
+    "styles" : [
+        "main"
+    ],
+    "data" : {
+        "db": {
+            "type": "object",
+            "items": {
+                "user": {
+                    "type": "array",
+                    "items": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "nachname": {
+                            "type": "string"
+                        },
+                        "alter": {
+                            "type": "string",
+                            "default": "dummy"
+                        },
+                        "abillitys": {
+                            "type": "object",
+                            "items": {
+                                "jumpPower" : {
+                                    "type": "string",
+                                    "default": 100
+                                },
+                                "speed": {
+                                    "type": "array",
+                                    "items": {
+                                        "jumpPower" : {
+                                            "type": "string",
+                                            "default": 100
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "moderators": {
+                    "type": "array",
+                    "items": {
+                        "name": {
+                            "type": "string",
+                                    "default": "dummy"
+                        },
+                        "nachname": {
+                            "type": "string",
+                                    "default": "dummy"
+                        },
+                        "tableInTable": {
+                            "type": "array",
+                            "items": {
+                                "firstEntry": {
+                                    "type": "string",
+                                    "default": "dummy"
+                                },
+                                "secondEntry": {
+                                    "type": "string",
+                                    "default": "dummy"
+                                }
+                            }
+                        }
+                    }
+                },
+                "modData": {
+                    "type": "object",
+                    "items": {
+                        "name": {
+                            "type": "string",
+                            "default": "dummy"
+                        },
+                        "nachname": {
+                            "type": "string",
+                            "default": "dummy"
+                        },
+                        "commentsaa": {
+                            "type": "array",
+                            "items": {
+                                "name": {
+                                    "type": "string",
+                                    "default": "dummy"
+                                },
+                                "nachname": {
+                                    "type": "string",
+                                    "default": "dummy"
+                                },
+                                "entry": {
+                                    "type": "string",
+                                    "default": "dummy"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

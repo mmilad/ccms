@@ -1,0 +1,61 @@
+
+            #navBar {
+                float:left;
+                width: 200px;
+            }
+            #showBar {
+                float:left;
+                width: 800px;
+            }
+            .data-structure{
+                background-color:white;
+            }
+            td span {
+                float:left;
+                clear: both;
+            }
+            .schema_description{
+                outline:1px solid black;
+            }
+            .schema_description.object{
+                background-color:red;
+            }
+            .schema_description.array{
+                background-color:yellow;
+            }
+            /*.field_type_object {
+                background-color:gainsboro;
+                border:1px solid grey;
+            }*/
+            .field_type_object_item {
+                margin-left:10px;
+            }
+            .field_type_object_item span {
+                /*float: left;*/
+            }
+            .field_type_array {
+                background-color:blue;
+                border:1px solid grey;
+                display: inline-table;
+            }
+            .field_type_string {
+                background-color:#f1f1f1;
+                border:1px solid grey;
+            }
+            .object_item {
+                margin-left: 10px;
+            }
+
+            /*array styles*/
+            .arrayValue input, .arrayObjectValue {
+                display: block;
+            }
+
+
+            .display_array {
+                background-color:gainsboro;
+            }
+
+            .display_object {
+                background-color:cornsilk;
+            }
